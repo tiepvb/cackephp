@@ -20,7 +20,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 	Router::parseExtensions('json');
-	$prefix = DS.'api'.DS.'v1'.DS;
+	$prefix = '/api/v1/';
 	Router::connect($prefix . 'get-token', array('controller' => 'users', 'action' => 'login'));
 /**
  * Here, we are connecting '/' (base path) to controller called 'Pages',
